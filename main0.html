@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="C:\Users\Aaron\Desktop\Loyola Competition\logo.png">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MusicClub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="C:\Users\Aaron\Desktop\Loyola Competition\logo.png">
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MusicClub</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,500&display=swap"
+    rel="stylesheet">
+
+
+</head>
+
+<body>
+<!-- code for the navbar -->
+<nav>
+    <div class="menu-icon">
+        <span class="fas fa-bars"></span>
+    </div>
+    <div class="search-icon">
+        <span class="fas fa-search"></span>
+    </div>
+    <div class="cancel-icon">
+        <span class="fas fa-times"></span>
+    </div>
+    <form action="#">
+        <input type="search" class="search-data" placeholder="Search" required>
+        <button type="submit" class="fas fa-search"></button>
+    </form>
+    <div class="nav-items">
+        <li><img src="tv.png" height="20px;"> </li>
+        <li><img src="radio.png" height="20px";> </li>
+        <li><img src="notification.png" height="20px";> </li>
+        <li><img src="C:\Users\Aaron\Desktop\Loyola Competition\crown.png" height="20px;">"</li>
+        <li>AF Shinchan</li>
+    </div>
+</nav>
+<script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = () => {
+        items.classList.add("active");
+        menuBtn.classList.add("hide");
+        searchBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = () => {
+        items.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        searchBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        form.classList.remove("active");
+        cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = () => {
+        form.classList.add("active");
+        searchBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+    }
+</script>
+
+</head>
+  <body>
+
+    <div class="sidebar">
+        <div class="logo-details">
+            <img class="rocket" src="logo.png" height="50px"; style="margin-left:1em;margin-top:1em;">
+        </div>
+        <div class="top_nav" style="margin-right:4em;">
+            <ul class="nav-links">
+                <li>
+                    <img class="rocket" src="rocket.png" height="20px";>
+                    <span class="link_name"> Discover</span>
+                </li>
+                <li style="padding-right:20px;">
+                    <img class="music" src="music.png" height="20px" >
+                    <span class="link_name">Songs</span>
+                </li>
+                <li  style="padding-right:5px; text-decoration:none;">
+                    <a class="link_name" href="Main.html#"><img class="files" src="copy.png" height="20px";>
+                    <span class="link_name"> Albums</span></a>
+                    
+                      
+                </li>
+                <li style="padding-right:20px;">
+                    <img class="people" src="person.png" height="20px">
+                    <span class="link_name"> Artists</span>
+                </li>
+                <li>
+                    <img class="youtube" src="play.png" height="20px" style="margin-right:0em;";>
+                    <span class="link_name"> Youtube</span>
+                </li>
+        </div>
+        </ul>
+        <div class="tracks_nav" style="margin-left:0em;">
+            <span class="tracks_name"><b style="margin-left: 1em;">  My Tracks</b></span>
+            <ul class="tracks_list" style="margin-bottom:1em;">
+                <li style="margin-bottom:0.5em;">
+                    <img class="thumbsup" src="thumbsup.png" height="20px" style="margin-top:0.5em;">
+                    <span class="link_name"> Favourite</span>
+                </li>
+                <li style="margin-bottom:0.5em;">
+                    <img class="recent_history" src="recenthistory.png" height="20px";>
+                    <span class="link_name">Reccent History</span>
+                </li>
+                <li style="margin-bottom:0.5em;">
+                    <img class="download_file" src="downloadfile.png" height="20px";>
+                    <span class="link_name">Download Items</span>
+                </li>
+                <li style="margin-bottom:0.5em;">
+                    <img class="folder_open" src="folderopen.png" height="20px";>
+                    <span class="link_name">Local Files</span>
+                </li>
+
+            </ul>
+        </div>
+        <div class="Playlist_nav" style="margin-left:1em;">
+            <span class="playlist_name"><b>Playlist</b> <img src="C:\Users\Aaron\Downloads\StuckBetweenPixels\MusicPlayerBox\AlbumPlaylist\Icons\addbutton.png" height="18px" style="padding-left: 5em; padding-top:4px;"></span>
+            <ul class="playlist_list">
+                <li style="margin-bottom:0.5em; margin-left:-1em;">
+                    <img class="downloadfile_1"
+                        src="downloadfile.png">
+                    <span class="link_name">Bangla</span>
+                </li>
+                <li style="margin-bottom:0.5em;margin-left:-1em;">
+                    <img class="downloadfile_2"
+                        src="downloadfile.png">
+                    <span class="link_name">English</span>
+                </li>
+                <li style="margin-bottom:0.5em;margin-left:-1em;">
+                    <img class="downloadfile_3"
+                        src="downloadfile.png">
+                    <span class="link_name">My Style</span>
+                </li>
+                <li style="margin-bottom:0.5em;margin-left:-1em;">
+                    <img class="downloadfile_4"
+                        src="downloadfile.png">
+                    <span class="link_name">Hindi</span>
+                </li>
+
+
+
+
+
+            </ul>
+
+
+        </div>
+
+
+
+    </div>
+    <div>
+        <img src="C:\Users\Aaron\Desktop\Loyola Competition\043f129797e568e42c537d0fe26db04b.png" alt="main_image" height="300px;" width="1200px"; style="margin-left:12em;">
+    </div>
+    <div class="text-center" style="margin-top:5em; display:flex;">
+        <h6 style= "text-align-right;padding-left:13em;margin-top:-4.5em;"><b>Featured<span> Tracks</span></b></h6>
+        <div style="margin-right: 5em;">
+            <img src="C:\Users\Aaron\Desktop\Loyola Competition\262e2d4161480ae021736896f18f4243.jpg" class="rounded" alt="image1" height="100px" width="120px" style="border-radius:5px;">
+            <br><b><small>Sucker</small></b><br>Jones Brothers
+        </div>
+        <div style="margin-right: 5em;">
+        <img src="C:\Users\Aaron\Desktop\Loyola Competition\e411b1649ad3bcd0a366f448b66dfd2b.jpg" alt="image2" height="100px" width="100px" style="border-radius:5px; margin-left: 2px;">
+        <br><b><small>I Don't Care</small></b><br>Ed Sheeran & Bieber's
+        </div>
+        <div style="margin-right: 5em;">
+        <img src="C:\Users\Aaron\Desktop\Loyola Competition\89f878e17d88fa4a05603b208b897fc5.jpg" alt="image3" height="100px" width="100px" style="border-radius:5px; padding-left: 7px;">
+        <br><b><small>Old Town Road</small></b><br>Lil Nas
+        </div>
+        <div style="margin-right: 5em;">
+        <img src="C:\Users\Aaron\Desktop\Loyola Competition\612cfbd66354883b45b7710dd49f8b4f.jpg" alt="image4" height="100px" width="100px" style="border-radius:5px; padding-left: 7px;">
+        <br><b><small>Can't Let Go</small></b><br>Feydee
+        </div>
+        <div style="margin-right: 5em;">
+        <img src="C:\Users\Aaron\Desktop\Loyola Competition\7d44a5d280db44e5d611903b6395545f.jpg" alt="image5" height="100px" width="100px" style="border-radius:5px; padding-left: 7px;">
+        <br><b><small>I need Your Love</small></b><br>Feydee
+        </div>
+        <div style="margin-right: 5em;">
+        <img src="C:\Users\Aaron\Desktop\Loyola Competition\796250871b272a19c2ab9e2ea2714e3d.jpg" alt="image6" height="100px" width="100px" style="border-radius:5px; padding-left: 7px;">
+        <br><b><small>Otilia</small></b><br>Bilionera
+        </div>
+</div>
+<div>
+    <h6 style="margin-left:13em"><b>Top Tracks</b></h6>
+</div>
+<div>
+    <p style="margin-left: 15em;margin-top:2em;"># <b style="padding-left:17em;">Song</b><b style="padding-left:7em;">Artist</b><b style="padding-left:7em;">Daily Plays</b><b style="padding-left: 7em;">Time</b><b style="padding-left: 7em;">Option</b></p>
+    <p style="margin-left: 15em;margin-top:2em;">1 <img src="C:\Users\Aaron\Desktop\Loyola Competition\thumbsup.png" style="padding-left:4.5em;padding-right: 7em;">Dame Dame <b style="padding-left:5em">Claydee feat</b><i style="padding-left:7.5em;">42,822</i><b style="padding-left:8em;">3:21</b><img src="C:\Users\Aaron\Desktop\Loyola Competition\downloadfile.png" style="padding-left:4.5em;"> <img src="C:\Users\Aaron\Desktop\Loyola Competition\th (7).jpg" height="20px" style="padding-left:3em;"><img src="C:\Users\Aaron\Desktop\Loyola Competition\th.jpg" height="20px" style="padding-left:3em;"></p>
+    <p style="margin-left: 15em;margin-top:2em;"><img src="C:\Users\Aaron\Desktop\Loyola Competition\playingnow.png" height="10px"> <img src="C:\Users\Aaron\Desktop\Loyola Competition\thumbsup.png" style="padding-left:4em;padding-right: 8em;">Kamelia <b style="padding-left:6.9em">DDY Nunes</b><i style="padding-left:7.5em;">32,420 </i><b style="padding-left:7.5em;">3:30</b><img src="C:\Users\Aaron\Desktop\Loyola Competition\downloadfile.png" style="padding-left:4.5em;"> <img src="C:\Users\Aaron\Desktop\Loyola Competition\th (7).jpg" height="20px" style="padding-left:3em;"><img src="C:\Users\Aaron\Desktop\Loyola Competition\th.jpg" height="20px" style="padding-left:3em;"></p>
+    <p style="margin-left: 15em;margin-top:2em;">3 <img src="C:\Users\Aaron\Desktop\Loyola Competition\thumbsup.png" style="padding-left:4.5em;padding-right: 7em;">Laugh Till You Cry <b style="padding-left:4em">Feydee</b><i style="padding-left:8.5em;">28,221</i><b style="padding-left:8em;">3:21</b><img src="C:\Users\Aaron\Desktop\Loyola Competition\downloadfile.png" style="padding-left:4.5em;"> <img src="C:\Users\Aaron\Desktop\Loyola Competition\th (7).jpg" height="20px" style="padding-left:3em;"><img src="C:\Users\Aaron\Desktop\Loyola Competition\th.jpg" height="20px" style="padding-left:3em;"></p>
+    </div>
+
+    <nav>
+        <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+        </div>
+        <div class="search-icon">
+            <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+        </div>
+    </nav>
+    </body>
+    </html>
